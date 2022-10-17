@@ -1,0 +1,46 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 10px 17px -7px #a9a4a4;
+  margin: 0px;
+}
+
+nav > h1 {
+  text-shadow: 6px 7px 6px rgba(62,49,206,0.84);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.menu-item {
+  box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.78);
+  padding: 13px;
+  background-color: bisque;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.menu-item:has(.menu-item__active) {
+  box-shadow: inset 5px 6px 11px 0px #2D2D2D;
+  color: blueviolet;
+  background-color: rgb(244, 178, 97);
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-item > a:visited {
+  text-decoration: none;
+  color: inherit;
+}
