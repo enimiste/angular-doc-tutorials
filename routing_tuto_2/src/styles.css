@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.alert-danger {
+  background-color: rgba(248, 174, 174, 0.434);
+  color: rgb(159, 11, 11);
+  border: 1px solid rgb(240, 125, 125);
+  font-style: italic;
+  padding: 10px 20px;
+  flex-grow: 1;
+  margin: 5px 10px;
+  word-wrap: break-word;
+}
+
+.ng-invalid:not(form) {
+  border: 1px solid red;
+}

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'routing_tuto_2';
+
+  private readonly rndUrl: string = crypto.randomUUID().toString();
+
+  get randomUrl(){
+    return this.rndUrl
+  }
 }
